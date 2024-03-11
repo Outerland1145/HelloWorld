@@ -29,33 +29,48 @@ namespace HelloWorld
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnGo = new System.Windows.Forms.Button();
+            this.EnterA = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnGo
             // 
-            this.button1.Location = new System.Drawing.Point(99, 279);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(257, 79);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGo.Location = new System.Drawing.Point(515, 198);
+            this.BtnGo.Name = "BtnGo";
+            this.BtnGo.Size = new System.Drawing.Size(145, 22);
+            this.BtnGo.TabIndex = 0;
+            this.BtnGo.Text = "登入";
+            this.BtnGo.UseVisualStyleBackColor = true;
+            this.BtnGo.Click += new System.EventHandler(this.BtnGo_Click);
+            // 
+            // EnterA
+            // 
+            this.EnterA.Location = new System.Drawing.Point(108, 198);
+            this.EnterA.Name = "EnterA";
+            this.EnterA.Size = new System.Drawing.Size(382, 22);
+            this.EnterA.TabIndex = 1;
+            this.EnterA.Text = "請輸入帳戶";
+
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.EnterA);
+            this.Controls.Add(this.BtnGo);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnGo;
+        private System.Windows.Forms.TextBox EnterA;
     }
 }
 
