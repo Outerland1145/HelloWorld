@@ -16,5 +16,10 @@ namespace HelloWorld
         {
             InitializeComponent();
         }
+
+        private void BtnGo_Click(object sender, EventArgs e)
+        {
+            EnterA.Text = "Hello World!";
+        }
     }
 }
